@@ -4,12 +4,11 @@
 
 import time
 
-import board
-import busio
-from adafruit_lc709203f import LC709203F
 import adafruit_pcf8523
-from simpleio import tone
+import board
 import neopixel
+from adafruit_lc709203f import LC709203F
+from simpleio import tone
 
 rtc = adafruit_pcf8523.PCF8523(board.I2C())
 battery = LC709203F(board.I2C())
